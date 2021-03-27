@@ -115,8 +115,8 @@ ponder_results = {}
 
 @backoff.on_exception(backoff.expo, BaseException, max_time=600, giveup=is_final)
 def play_game(li, game_id, engine_factory, user_profile, config):
-    li.chat(game_id,"player","Hey buddy, I am @Unkown_2009 BOT This bot has made by @Enticingseal AND @master_bot. To get help on making a bot, ask @master_bot .")
-    li.chat(game_id,"spectator","Hey buddy, I am @Unkown_2009 BOT This bot has made by @Enticingseal AND @master_bot. To get help on making a bot, ask @master_bot .")
+    li.chat(game_id,"player","Hey buddy!, I am @Unkown_2009, This bot has made by @Enticingseal AND @master_bot. To get help on making a bot, ask @master_bot :D .")
+    li.chat(game_id,"spectator","Hi guys!, I am @Unkown_2009, This bot has made by @Enticingseal AND @master_bot. To get help on making a bot, ask @master_bot :D .")
     response = li.get_game_stream(game_id)
     lines = response.iter_lines()
     bullet=False
