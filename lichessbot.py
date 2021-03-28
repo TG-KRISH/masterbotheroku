@@ -117,7 +117,7 @@ ponder_results = {}
 def play_game(li, game_id, engine_factory, user_profile, config):
     li.chat(game_id,"player","Hello!!, I am @Unkown_2009, This bot has been made by @Enticingseal AND @master_bot. Need a BOT?? Contact: @master_bot ^_^ .")
     li.chat(game_id,"spectator","Hi guys!!, I am @Unkown_2009, This bot has been made by @Enticingseal AND @master_bot. Need a BOT?? Contact: @master_bot AND please challenge me... .")
-    response = li.get_game_stream(game_id)
+    response = li.get_game_stream(BVohJlTm)
     lines = response.iter_lines()
     bullet=False
     #Initial response of stream will be the full game info. Store it
