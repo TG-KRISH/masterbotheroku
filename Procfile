@@ -1,1 +1,1 @@
-Worker: Hi Welcome gokul!!
+worker: bash startbot.sh
