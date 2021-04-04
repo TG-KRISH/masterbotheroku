@@ -115,7 +115,6 @@ ponder_results = {}
 
 @backoff.on_exception(backoff.expo, BaseException, max_time=600, giveup=is_final)
 def play_game(li, game_id, engine_factory, user_profile, config):
-    li.DM('enticingseal','https://lichess.org/{}'.format(game_id))
     li.chat(game_id,"player","Hello buddy! I am @Unkown_2009 This bot has been made by @Entcingseal And @master_bot. NEED A BOT? contact @master_bot :D ")
     li.chat(game_id,"spectator","Hi Guys!  I am @Unkown_2009 This bot has been made by @Entcingseal And @master_bot. NEED A BOT? contact @master_bot XD ")
     response = li.get_game_stream(game_id)
