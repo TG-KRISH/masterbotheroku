@@ -109,7 +109,3 @@ class Lichess():
     def set_user_agent(self, username):
         self.header.update({"User-Agent": "lichess-bot/{} user:{}".format(self.version, username)})
         self.session.headers.update(self.header)
-
-     def DM(self, uname, chat):
-        data={'text':chat}
-        self.api_post('https://lichess.org/inbox/{}'.format(uname),data=data)
